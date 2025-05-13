@@ -1,0 +1,6 @@
+{
+    "pythonPath": ".venv/bin/python",
+    "venvPath": ".",
+    "venv": ".venv",
+    "include": ["tokenizers"]
+}

@@ -1,0 +1,17 @@
+[package]
+name = "tokenizers_py"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+pyo3 = "0.24.0"
+itertools = "0.14.0"
+tracing = "0.1.41"
+rayon = "1.10.0"
+
+tokenizers = { path = "../" }
+
+[lib]
+name = "tokenizers"
+crate-type = ["cdylib"]
+

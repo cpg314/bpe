@@ -1,0 +1,26 @@
+[project]
+name = "tokenizers"
+version = "0.1.0"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "bidict>=0.23.1",
+    "matplotlib>=3.10.3",
+    "structlog>=25.3.0",
+    "tqdm>=4.67.1",
+]
+
+[build-system]
+requires = ["maturin>=1.8,<2.0"]
+build-backend = "maturin"
+
+[lint]
+extend-select = ["I"]
+
+[project.optional-dependencies]
+tests = [
+    "pytest",
+]
+[tool.maturin]
+features = ["pyo3/extension-module"]
+manifest-path = "py/Cargo.toml"
